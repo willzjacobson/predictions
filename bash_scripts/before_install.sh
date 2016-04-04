@@ -1,2 +1,4 @@
 #!/bin/bash
-pip uninstall larkin
+if [ -z ${larkin+x} ]; then 
+	pip uninstall larkin
+fi
