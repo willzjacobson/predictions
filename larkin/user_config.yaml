@@ -1,0 +1,55 @@
+default:
+  buildings:
+    - 345_Park
+  # run mode
+  debug: False
+
+  345_Park:
+      floor_quadrants:
+        -
+          - 24
+          - NW
+        -
+          - 24
+          - NE
+
+      # electric
+      electric_meter_count: 6
+
+      timezone: US/Eastern
+      steam_meter_count: 3
+
+      water_meter_count: 2
+
+
+building_dbs:
+  mongo_cred:
+      host: 52.21.246.131 #54.173.216.14 #R3.Xlarge
+      port: 27017
+      source: admin
+      username: Analytics
+      password: L3x1^gt0n
+  wund_cred:
+      wund_url: http://api.wunderground.com/api/bab4ba5bcbc2dbec/
+    # wund_url: http://api.wunderground.com/api/08d25f404214f50b/
+      city: New_York
+      state: NY
+      refresh_rate: '15M'
+  weather_forecast_loc:
+      db_name: weather
+      collection_name: forecast
+  weather_history_loc:
+      db_name: weather
+      collection_name: history
+  building_ts_loc:
+      db_name: skynet
+      collection_name: timeseries
+  results_steam_benchmark:
+      db_name_out: benchmarks
+      collection_name_out: steam
+  results_electric_benchmark:
+      db_name_out: benchmarks
+      collection_name_out: electricity
+  results_water_benchmark:
+        db_name_out: benchmarks
+        collection_name_out: water

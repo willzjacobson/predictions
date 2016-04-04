@@ -1,0 +1,12 @@
+cython
+-e git+https://github.com/statsmodels/statsmodels.git#egg=statsmodels-0.8
+joblib
+pymongo
+sklearn
+pandas
+pip
+numpy
+pyyaml
+python-crontab
+schedule
+matplotlib
