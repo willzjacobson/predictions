@@ -7,6 +7,6 @@ files:
 
 hooks:
   BeforeInstall:
-    - location: /var/analytics/an_predictions/bash_scripts/before_install.sh
+    - location: /bash_scripts/before_install.sh
   AfterInstall:
-    - location: /var/analytics/an_predictions/bash_scripts/after_install.sh
+    - location: /bash_scripts/after_install.sh
