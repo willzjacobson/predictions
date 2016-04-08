@@ -30,7 +30,8 @@ building_dbs:
       username: Analytics
       password: L3x1^gt0n
   wund_cred:
-      wund_url: http://api.wunderground.com/api/bab4ba5bcbc2dbec/
+      wund_url: http://api.wunderground.com/api/53b91a5eddd63026/
+    # wund_url: http://api.wunderground.com/api/bab4ba5bcbc2dbec/
     # wund_url: http://api.wunderground.com/api/08d25f404214f50b/
       city: New_York
       state: NY
